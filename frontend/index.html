@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="sw" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mr. Muungano — Msaidizi wa AI wa Elimu ya Muungano wa Tanganyika na Zanzibar" id="meta-description" />
+  <meta name="theme-color" content="#0a1410" />
+  <title>Mr. Muungano — Elimu ya Muungano</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <script>
+    (function () {
+      var t = localStorage.getItem("muungano_theme");
+      document.documentElement.setAttribute("data-theme", t === "light" ? "light" : "dark");
+    })();
+  </script>
+</head>
+<body>
+  <div class="bg-accent" aria-hidden="true"></div>
+  <div class="app">
+    <header class="topbar">
+      <div class="topbar__left">
+        <a href="/" class="brand" id="brand-home" title="Mr. Muungano">
+          <span class="brand__icon" aria-hidden="true">
+            <i class="fa-solid fa-handshake"></i>
+          </span>
+          <span class="brand__text">
+            <span class="brand__title">Mr. Muungano</span>
+            <span class="brand__sub" data-i18n="brandSub">Elimu ya Muungano</span>
+          </span>
+        </a>
+        <span class="status-pill" id="status-pill">
+          <span class="status-dot" id="status-dot"></span>
+          <span class="status-text" id="status-text" data-i18n="statusChecking">Inaangalia…</span>
+        </span>
+      </div>
+      <div class="topbar__actions">
+        <div class="settings-wrap">
+          <button type="button" class="btn-ghost" id="settings-toggle" data-i18n-aria="settingsToggle" aria-label="Mipangilio">
+            <i class="fa-solid fa-sliders"></i>
+          </button>
+          <div class="settings-panel" id="settings-panel" hidden>
+            <label class="settings-label" for="tone-select" data-i18n="toneLabel">Mtindo wa Majibu</label>
+            <select id="tone-select" class="select">
+              <option value="youth" data-i18n="toneYouth" selected>Kijana / Rahisi</option>
+              <option value="simple" data-i18n="toneSimple">Eleza kama mtoto wa miaka 10</option>
+              <option value="default" data-i18n="toneDefault">Otomatiki</option>
+              <option value="student" data-i18n="toneStudent">Mwanafunzi</option>
+              <option value="official" data-i18n="toneOfficial">Rasmi</option>
+            </select>
+          </div>
+        </div>
+        <div class="lang-toggle" role="group" data-i18n-aria="langSwitch" aria-label="Lugha">
+          <button type="button" class="lang-btn active" data-lang="sw" title="Kiswahili">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i> SW
+          </button>
+          <button type="button" class="lang-btn" data-lang="en" title="English">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i> EN
+          </button>
+        </div>
+        <button type="button" class="btn-ghost theme-toggle" id="theme-toggle" data-i18n-aria="themeToggle" aria-label="Badilisha mandhari" title="Badilisha mandhari">
+          <i class="fa-solid fa-moon" aria-hidden="true"></i>
+          <i class="fa-solid fa-sun" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn-ghost" id="clear-chat" data-i18n-aria="clearChat" data-i18n-title="clearChatTitle" aria-label="Futa mazungumzo" title="Anza upya">
+          <i class="fa-solid fa-rotate-left"></i>
+        </button>
+      </div>
+    </header>
+
+    <main class="chat-stage">
+      <div class="chat-messages" id="chat-messages" role="log" aria-live="polite">
+        <div class="welcome" id="welcome">
+          <div class="welcome__icon" aria-hidden="true">
+            <i class="fa-solid fa-comments"></i>
+          </div>
+          <h1 class="welcome__title" data-i18n="landingTitle">Uliza kuhusu Muungano</h1>
+          <p class="welcome__sub" data-i18n="landingSub">Majibu kutoka vyanzo rasmi</p>
+          <div id="welcome-suggestions" class="suggestion-grid"></div>
+        </div>
+      </div>
+
+      <div class="chat-input-area">
+        <form id="chat-form" class="chat-form">
+          <div class="input-wrap">
+            <textarea
+              id="message-input"
+              rows="1"
+              data-i18n-placeholder="inputPlaceholder"
+              placeholder="Andika swali lako hapa…"
+              maxlength="2000"
+              required
+            ></textarea>
+            <button type="submit" class="btn-send" id="send-btn" aria-label="Tuma">
+              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <aside class="references-drawer" id="references-drawer" aria-hidden="true">
+    <div class="references-drawer__header">
+      <div>
+        <h2><i class="fa-solid fa-bookmark"></i> <span data-i18n="referencesTitle">Marejeo</span></h2>
+        <p data-i18n="referencesSub">Vyanzo vilivyotumika kujibu swali lako.</p>
+      </div>
+      <button class="btn-ghost" id="references-close" data-i18n-aria="closeReferences" aria-label="Funga">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div id="references-list" class="references-list">
+      <p class="references-empty" data-i18n="referencesEmpty">Bofya "Angalia marejeo" kwenye jibu ili kuona vyanzo.</p>
+    </div>
+  </aside>
+
+  <div class="overlay" id="overlay" aria-hidden="true"></div>
+
+  <script src="/assets/js/app.js" type="module"></script>
+</body>
+</html>
