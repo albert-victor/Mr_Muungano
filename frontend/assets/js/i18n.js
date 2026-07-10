@@ -1,8 +1,8 @@
 /** Bilingual UI strings — Kiswahili & English */
 export const STRINGS = {
   sw: {
-    metaDescription: "Mr. Muungano — Msaidizi wa AI wa Elimu ya Muungano wa Tanganyika na Zanzibar",
-    pageTitle: "Mr. Muungano — Elimu ya Muungano",
+    metaDescription: "MuunganoAi — Msaidizi wa AI wa Elimu ya Muungano wa Tanganyika na Zanzibar",
+    pageTitle: "MuunganoAi — Elimu ya Muungano",
     brandSub: "Elimu ya Muungano wa Tanzania",
     toneLabel: "Mtindo wa Majibu",
     toneDefault: "Otomatiki",
@@ -40,13 +40,13 @@ export const STRINGS = {
     clearChat: "Futa mazungumzo",
     clearChatTitle: "Anza upya",
     langSwitch: "Lugha",
-    typingLabel: "Mr. Muungano anaandika",
+    typingLabel: "MuunganoAi anaandika",
     copyDone: "Imenakiliwa!",
     copyLabel: "Nakili",
   },
   en: {
-    metaDescription: "Mr. Muungano — AI assistant for education on the Union of Tanganyika and Zanzibar",
-    pageTitle: "Mr. Muungano — Union Education",
+    metaDescription: "MuunganoAi — AI assistant for education on the Union of Tanganyika and Zanzibar",
+    pageTitle: "MuunganoAi — Union Education",
     brandSub: "Union Education for Tanzania",
     toneLabel: "Response Style",
     toneDefault: "Automatic",
@@ -84,7 +84,7 @@ export const STRINGS = {
     clearChat: "Clear conversation",
     clearChatTitle: "Start fresh",
     langSwitch: "Language",
-    typingLabel: "Mr. Muungano is typing",
+    typingLabel: "MuunganoAi is typing",
     copyDone: "Copied!",
     copyLabel: "Copy",
   },

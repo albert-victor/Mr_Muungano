@@ -1,4 +1,4 @@
-"""Run Mr. Muungano server."""
+"""Run MuunganoAi server."""
 import socket
 import sys
 
@@ -34,7 +34,7 @@ if __name__ == "__main__":
 
     print()
     print("=" * 50)
-    print("  Mr. Muungano — Server inaendesha")
+    print("  MuunganoAi — Server inaendesha")
     print("  Inapakia embedding model (sekunde 5-30, mara ya kwanza zaidi)…")
     print(f"  Fungua browser: http://{HOST}:{PORT}")
     print("  Usitumie 0.0.0.0 wala localhost/muunganoGPT (XAMPP)")

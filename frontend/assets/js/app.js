@@ -1,5 +1,5 @@
 /**
- * Mr. Muungano — Frontend Chat Client (Dira-style UI)
+ * MuunganoAi — Frontend Chat Client (Dira-style UI)
  */
 import { getLang, setLang, t } from "./i18n.js";
 import { formatMarkdown, formatStreaming, escapeHtml, escapeAttr } from "./markdown.js";
@@ -412,7 +412,7 @@ function appendMessage(role, content) {
     <div class="message__avatar" aria-hidden="true">${avatarIcon(role)}</div>
     <div class="message__col">
       <div class="message__meta">
-        <span class="message__name">${isUser ? (getLang() === "en" ? "You" : "Wewe") : "Mr. Muungano"}</span>
+        <span class="message__name">${isUser ? (getLang() === "en" ? "You" : "Wewe") : "MuunganoAi"}</span>
         <span class="message__time">${time}</span>
       </div>
       <div class="message__bubble">
@@ -433,7 +433,7 @@ function showTyping(label) {
     <div class="message__avatar is-pulsing" aria-hidden="true">${avatarIcon("bot")}</div>
     <div class="message__col">
       <div class="message__meta">
-        <span class="message__name">Mr. Muungano</span>
+        <span class="message__name">MuunganoAi</span>
       </div>
       <div class="message__bubble message__bubble--typing">
         <div class="typing-indicator">

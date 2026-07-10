@@ -1,4 +1,4 @@
-"""Mr. Muungano — configuration."""
+"""MuunganoAi — configuration."""
 from pathlib import Path
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
@@ -36,7 +36,7 @@ class Settings(BaseSettings):
     history_messages: int = 4
     llm_max_tokens: int = 1024
 
-    app_title: str = "Mr. Muungano"
+    app_title: str = "MuunganoAi"
     app_description: str = "Msaidizi wa AI wa Elimu ya Muungano wa Tanganyika na Zanzibar"
 
 

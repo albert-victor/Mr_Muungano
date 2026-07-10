@@ -1,4 +1,4 @@
-# Mr. Muungano
+# MuunganoAi
 
 **An AI educator for the Union of Tanganyika and Zanzibar**  
 *Grounded in official sources — the Constitution, Articles of Union, and government publications.*
@@ -11,7 +11,7 @@ Whether you're a young person, a student, or anyone trying to understand why Tan
 
 ---
 
-## Why Mr. Muungano?
+## Why MuunganoAi?
 
 | Challenge | Solution |
 |-----------|----------|
@@ -133,7 +133,7 @@ muunganoGPT/
 │       ├── chroma_store.py  # Vector store
 │       ├── crawl.py         # Official website crawler
 │       ├── ingest*.py       # PDF, web, youth Q&A
-│       └── prompts.py       # Mr. Muungano system prompts
+│       └── prompts.py       # MuunganoAi system prompts
 ├── frontend/                # UI — HTML, CSS, JS (no framework)
 ├── data/
 │   ├── sources/allowlist.yaml   # Approved sources
@@ -175,7 +175,7 @@ Set in `.env` — see `.env.example` for the full list:
 
 ## Trust principles
 
-Mr. Muungano is not built to invent facts. Core rules:
+MuunganoAi is not built to invent facts. Core rules:
 
 - Answers are grounded in context retrieved from approved sources
 - Specific dates and facts — never model guesses
@@ -186,10 +186,10 @@ Mr. Muungano is not built to invent facts. Core rules:
 
 ## Disclaimer
 
-Mr. Muungano is an educational tool. It does not represent any government body. For formal legal matters, refer to the original documents on official government websites.
+MuunganoAi is an educational tool. It does not represent any government body. For formal legal matters, refer to the original documents on official government websites.
 
 ---
 
 <p align="center">
-  <strong>Mr. Muungano</strong> — understand the Union, in your language, from sources you can trust.
+  <strong>MuunganoAi</strong> — understand the Union, in your language, from sources you can trust.
 </p>

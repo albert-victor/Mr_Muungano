@@ -1,4 +1,4 @@
-"""FastAPI application — Mr. Muungano."""
+"""FastAPI application — MuunganoAi."""
 from __future__ import annotations
 
 import asyncio

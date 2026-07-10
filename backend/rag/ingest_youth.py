@@ -30,14 +30,14 @@ def ingest_youth_qa(path: Path | None = None) -> dict:
 
         text = f"Swali: {question}\n\nJibu: {answer}"
         meta = build_chunk_metadata(
-            document_name="Elimu Rahisi kwa Vijana — Mr. Muungano",
+            document_name="Elimu Rahisi kwa Vijana — MuunganoAi",
             document_type="youth_plain",
             source_url="",
             publication_date="",
             page_number=0,
             section_title=item.get("section_title", ""),
             language=item.get("language", "sw"),
-            government_institution="Mr. Muungano (derived from official sources)",
+            government_institution="MuunganoAi (derived from official sources)",
             priority_level=DOCUMENT_PRIORITY.get("youth_plain", 2),
             source_file="youth_qa.json",
             source_kind="youth",
